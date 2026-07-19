@@ -1,0 +1,28 @@
+type = "card"
+title = "Web projects"
+description = "Selected websites and interactive projects I have designed and built."
+
+# Copy an [[items]] block for each project. Put screenshots in public/projects/.
+[[items]]
+title = "AECC Talent Policy Service Guide"
+subtitle = "A portable, actionable talent-policy guide for desktop use"
+date = "2026"
+content = "Reconstructs a text-based talent policy manual into an information system with explicit data relationships, high portability, and actionable workflows."
+tags = ["HTML5", "Vanilla JavaScript", "CSS3", "No framework"]
+image = "/projects/624-policy-guide.webp"
+link = "http://8.137.147.178/"
+link_label = "Live site"
+repository = "https://github.com/ChenKai22567/624_policy_guide"
+repository_label = "Source code"
+
+[[items]]
+title = "Human Resources Management Information System Dashboard"
+subtitle = "A visual specification for information-system development"
+date = "2026"
+content = "Clarifies the system data structure and turns textual requirements into an actionable interactive dashboard."
+tags = ["HTML5", "Vanilla JavaScript", "CSS3"]
+image = "/projects/talent-dashboard.webp"
+link = "http://8.137.147.178:22568/"
+link_label = "Live site"
+repository = "https://github.com/ChenKai22567/talent_dashboard"
+repository_label = "Source code"

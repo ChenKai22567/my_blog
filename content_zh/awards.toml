@@ -1,0 +1,21 @@
+type = "card"
+title = "奖项"
+description = "曾获得的荣誉与奖项。"
+
+[[items]]
+title = "硕士研究生国家奖学金"
+subtitle = "中华人民共和国教育部"
+date = "2025"
+content = "2024-2025年度 国家级奖项"
+
+[[items]]
+title = "四川大学优秀毕业研究生"
+subtitle = "四川大学"
+date = "2026"
+content = "2026年度 校级奖项"
+
+[[items]]
+title = "四川大学优秀研究生"
+subtitle = "四川大学"
+date = "2025"
+content = "2024-2025年度 校级奖项"

@@ -1,0 +1,29 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Science and technology intelligence analysis and scientific big data mining",
+  "Complex network and social network analysis",
+  "Information systems management and design; knowledge management"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "featured_projects"
+type = "cards"
+title = "Web projects"
+source = "projects.toml"
+limit = 3
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "Academic publications"
+filter = "selected"
+limit = 5

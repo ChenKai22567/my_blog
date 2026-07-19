@@ -1,0 +1,47 @@
+[site]
+title = "陈恺义"
+description = "四川大学陈恺义个人主页。"
+last_updated = "2026年07月14日"
+
+[author]
+name = "陈恺义"
+title = "硕士研究生"
+institution = "中国航发四川燃气涡轮院"
+
+
+[social]
+location = "成都，中国"
+location_details = [
+  "同仁路520号，",
+  "新都区，成都，中国"
+]
+
+[[navigation]]
+title = "关于我"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "项目"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "奖项"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

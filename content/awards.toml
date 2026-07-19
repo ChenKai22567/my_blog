@@ -1,0 +1,21 @@
+type = "card"
+title = "Awards"
+description = "Honors and awards I have received."
+
+[[items]]
+title = "National Scholarship for Master's Students"
+subtitle = "Ministry of Education of the People's Republic of China"
+date = "2025"
+content = "National-level award for the 2024–2025 academic year."
+
+[[items]]
+title = "Outstanding Graduate Student of Sichuan University"
+subtitle = "Sichuan University"
+date = "2026"
+content = "University-level honor for the 2026 graduating class."
+
+[[items]]
+title = "Outstanding Graduate Student of Sichuan University"
+subtitle = "Sichuan University"
+date = "2025"
+content = "University-level honor for the 2024–2025 academic year."

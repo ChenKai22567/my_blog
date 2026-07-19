@@ -1,0 +1,28 @@
+type = "card"
+title = "网页项目"
+description = "我设计并完成的网页与交互项目。"
+
+# 每个项目复制一个 [[items]] 区块；项目截图放在 public/projects/ 中。
+[[items]]
+title = "中国航发人才政策服务指南"
+subtitle = "面向 PC 端的人才政策信息管理与实操指南"
+date = "2026"
+content = "将文字版手册重构为数据关系明确、高可迁移、可操作性的信息系统。"
+tags = ["HTML5", "原生 JavaScript", "CSS3", "无框架"]
+image = "/projects/624-policy-guide.webp"
+link = "http://8.137.147.178/"
+link_label = "访问网站"
+repository = "https://github.com/ChenKai22567/624_policy_guide"
+repository_label = "查看源码"
+
+[[items]]
+title = "人力资源管理信息系统数据看板"
+subtitle = "可视化的系统开发需求"
+date = "2026"
+content = "梳理系统数据结构，将文字需求转化为可操作的页面。"
+tags = ["HTML5", "原生 JavaScript", "CSS3"]
+image = "/projects/talent-dashboard.webp"
+link = "http://8.137.147.178:22568/"
+link_label = "访问网站"
+repository = "https://github.com/ChenKai22567/talent_dashboard"
+repository_label = "查看源码"
