@@ -2,12 +2,12 @@
 title = "Kaiyi Chen"
 description = "Personal website of Kaiyi Chen at Sichuan University."
 favicon = "/trans_logo.png"
-last_updated = "July 14, 2026"
+last_updated = "July 26, 2026"
 
 [author]
 name = "Kaiyi Chen"
 title = "Master's Student"
-institution = "AECC Sichuan Gas Turbine Establishment"
+institution = "Sichuan University"
 avatar = "/avatar.webp"
 
 [social]
@@ -15,10 +15,7 @@ avatar = "/avatar.webp"
 
 email = "kaiyi0365@163.com"
 location = "Chengdu, China"
-location_details = [
-  "520 Tongren Road,",
-  "Xindu District, Chengdu, China"
-]
+location_details = []
 orcid = "https://orcid.org/0009-0003-5217-7238"
 github = "https://github.com/ChenKai22567"
 
@@ -58,7 +55,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Projects"
+title = "Information Systems"
 type = "page"
 target = "projects"
 href = "/projects"

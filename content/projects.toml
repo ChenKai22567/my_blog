@@ -1,15 +1,14 @@
 type = "card"
-title = "Web projects"
-description = "Selected websites and interactive projects I have designed and built."
+title = "Information Systems"
+description = ""
 
 # Copy an [[items]] block for each project. Put screenshots in public/projects/.
 [[items]]
-title = "AECC Talent Policy Service Guide"
+title = "Talent Policy Service Guide"
 subtitle = "A portable, actionable talent-policy guide for desktop use"
 date = "2026"
-content = "Reconstructs a text-based talent policy manual into an information system with explicit data relationships, high portability, and actionable workflows."
+content = "An information system featuring a RAG-powered large language model assistant, with high portability and actionable workflows."
 tags = ["HTML5", "Vanilla JavaScript", "CSS3", "No framework"]
-image = "/projects/624-policy-guide.webp"
 link = "http://8.137.147.178/"
 link_label = "Live site"
 repository = "https://github.com/ChenKai22567/624_policy_guide"

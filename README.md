@@ -1,8 +1,8 @@
 # Kaiyi Chen · Personal Website
 
-陈恺义的中英文个人主页，用于展示个人简介、网页项目、学术论文、奖项与简历。网站基于 Next.js、TypeScript 和 Tailwind CSS 构建，采用静态导出，可部署到普通 Web 服务器。
+陈恺义的中英文个人主页，用于展示个人简介、信息系统、学术论文、奖项与简历。网站基于 Next.js、TypeScript 和 Tailwind CSS 构建，采用静态导出，可部署到普通 Web 服务器。
 
-Kaiyi Chen's bilingual personal website for presenting a profile, web projects, academic publications, awards, and CV. It is built with Next.js, TypeScript, and Tailwind CSS and exports as a static site.
+Kaiyi Chen's bilingual personal website for presenting a profile, information systems, academic publications, awards, and CV. It is built with Next.js, TypeScript, and Tailwind CSS and exports as a static site.
 
 ## 内容维护 / Content maintenance
 

@@ -17,7 +17,7 @@ title = "关于我"
 [[sections]]
 id = "featured_projects"
 type = "cards"
-title = "网页项目"
+title = "信息系统"
 source = "projects.toml"
 limit = 3
 

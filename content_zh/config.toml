@@ -1,20 +1,17 @@
 [site]
 title = "陈恺义"
 description = "四川大学陈恺义个人主页。"
-last_updated = "2026年07月14日"
+last_updated = "2026年07月26日"
 
 [author]
 name = "陈恺义"
 title = "硕士研究生"
-institution = "中国航发四川燃气涡轮院"
+institution = "四川大学"
 
 
 [social]
 location = "成都，中国"
-location_details = [
-  "同仁路520号，",
-  "新都区，成都，中国"
-]
+location_details = []
 
 [[navigation]]
 title = "关于我"
@@ -29,7 +26,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "项目"
+title = "信息系统"
 type = "page"
 target = "projects"
 href = "/projects"
