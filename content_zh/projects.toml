@@ -9,6 +9,7 @@ subtitle = "面向 PC 端的人才政策信息管理与实操指南"
 date = "2026"
 content = "包含 RAG 大模型助手，且具有高可迁移、可操作性的信息系统。"
 tags = ["HTML5", "原生 JavaScript", "CSS3", "无框架"]
+image = "/projects/talent-policy-guide.png"
 link = "http://8.137.147.178/"
 link_label = "访问网站"
 repository = "https://github.com/ChenKai22567/624_policy_guide"

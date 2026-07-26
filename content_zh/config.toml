@@ -26,7 +26,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "信息系统"
+title = "项目"
 type = "page"
 target = "projects"
 href = "/projects"

@@ -55,7 +55,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Information Systems"
+title = "Projects"
 type = "page"
 target = "projects"
 href = "/projects"

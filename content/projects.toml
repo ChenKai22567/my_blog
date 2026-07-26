@@ -9,6 +9,7 @@ subtitle = "A portable, actionable talent-policy guide for desktop use"
 date = "2026"
 content = "An information system featuring a RAG-powered large language model assistant, with high portability and actionable workflows."
 tags = ["HTML5", "Vanilla JavaScript", "CSS3", "No framework"]
+image = "/projects/talent-policy-guide.png"
 link = "http://8.137.147.178/"
 link_label = "Live site"
 repository = "https://github.com/ChenKai22567/624_policy_guide"
