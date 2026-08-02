@@ -24,6 +24,10 @@ interface CardItem {
     link_label?: string;
     repository?: string;
     repository_label?: string;
+    skill_prompt?: string;
+    skill_label?: string;
+    skill_copied_label?: string;
+    skill_error_label?: string;
     image?: string;
 }
 

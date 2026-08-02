@@ -4,6 +4,22 @@ description = ""
 
 # 每个项目复制一个 [[items]] 区块；项目截图放在 public/projects/ 中。
 [[items]]
+title = "LIS 前沿文献追踪与智能周报"
+subtitle = "自动更新的图书情报学前沿文献库与智能周报"
+date = "2026"
+content = "聚合 46 种期刊的真实开放元数据，提供双语检索、相关性分级、网络分析标记与可追溯的每周趋势总结。"
+tags = ["Next.js", "FastAPI", "SQLite", "OpenAlex", "DeepSeek"]
+image = "/projects/lis-frontier.png"
+link = "https://lis.624work.club/"
+link_label = "访问网站"
+repository = "https://github.com/ChenKai22567/LIS_Frontier"
+repository_label = "查看源码"
+skill_label = "智能周报 Skill"
+skill_copied_label = "提示词已复制"
+skill_error_label = "复制失败"
+skill_prompt = "请从 GitHub 仓库 https://github.com/ChenKai22567/LIS-Frontier-Skill 安装 LIS Frontier Weekly Skill。安装后使用该 Skill 访问 https://lis.624work.club/ 的只读 API，先询问我本周重点关注的研究方向，再生成最近 7 天 LIS 前沿周报，包括主题趋势、相较前一周期的变化、核心与邻近文献、社会网络分析和复杂网络分析研究；每项结论均需列出可追溯文章，并支持继续检索和查看具体文章。若站点需要认证，只引导我通过环境变量 LIS_FRONTIER_USERNAME 与 LIS_FRONTIER_PASSWORD 配置，绝不要求我在聊天、命令行参数或仓库中粘贴凭据。"
+
+[[items]]
 title = "人才政策服务指南"
 subtitle = "面向 PC 端的人才政策信息管理与实操指南"
 date = "2026"

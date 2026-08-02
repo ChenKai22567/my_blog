@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
+import { ArrowTopRightOnSquareIcon, CheckIcon, ClipboardDocumentIcon, CodeBracketIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import { CardPageConfig } from '@/types/page';
 
 const markdownComponents = {
@@ -32,6 +33,24 @@ const markdownComponents = {
 };
 
 export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
+    const [copyStates, setCopyStates] = useState<Record<string, 'copied' | 'error'>>({});
+
+    const copySkillPrompt = async (key: string, prompt: string) => {
+        try {
+            await navigator.clipboard.writeText(prompt);
+            setCopyStates((current) => ({ ...current, [key]: 'copied' }));
+        } catch {
+            setCopyStates((current) => ({ ...current, [key]: 'error' }));
+        }
+        window.setTimeout(() => {
+            setCopyStates((current) => {
+                const next = { ...current };
+                delete next[key];
+                return next;
+            });
+        }, 2400);
+    };
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +121,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                         ))}
                                     </div>
                                 )}
-                                {(item.link || item.repository) && (
+                                {(item.link || item.repository || item.skill_prompt) && (
                                     <div className={`flex flex-wrap gap-[0.55rem] ${item.tags?.length ? "mt-[0.6rem]" : "mt-[0.3rem]"}`}>
                                         {item.link && (
                                             <a
@@ -125,6 +144,27 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                                 <CodeBracketIcon className="h-3.5 w-3.5 mr-1.5" />
                                                 {item.repository_label || 'Source code'}
                                             </a>
+                                        )}
+                                        {item.skill_prompt && (
+                                            <button
+                                                type="button"
+                                                onClick={() => copySkillPrompt(`${item.title}-${index}`, item.skill_prompt || '')}
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium border border-accent/30 bg-accent/5 text-accent hover:bg-accent hover:text-white active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 transition-all duration-200"
+                                                aria-live="polite"
+                                            >
+                                                {copyStates[`${item.title}-${index}`] === 'copied' ? (
+                                                    <CheckIcon className="h-3.5 w-3.5 mr-1.5" />
+                                                ) : copyStates[`${item.title}-${index}`] === 'error' ? (
+                                                    <ExclamationCircleIcon className="h-3.5 w-3.5 mr-1.5" />
+                                                ) : (
+                                                    <ClipboardDocumentIcon className="h-3.5 w-3.5 mr-1.5" />
+                                                )}
+                                                {copyStates[`${item.title}-${index}`] === 'copied'
+                                                    ? item.skill_copied_label || 'Prompt copied'
+                                                    : copyStates[`${item.title}-${index}`] === 'error'
+                                                        ? item.skill_error_label || 'Copy failed'
+                                                        : item.skill_label || 'Weekly report Skill'}
+                                            </button>
                                         )}
                                     </div>
                                 )}

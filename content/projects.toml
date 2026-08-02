@@ -4,6 +4,22 @@ description = ""
 
 # Copy an [[items]] block for each project. Put screenshots in public/projects/.
 [[items]]
+title = "LIS Frontier Literature Tracker"
+subtitle = "An automatically updated LIS literature library with an intelligent weekly report"
+date = "2026"
+content = "Aggregates real open metadata from 46 journals for bilingual search, relevance tiers, network-analysis tagging, and traceable weekly trend summaries."
+tags = ["Next.js", "FastAPI", "SQLite", "OpenAlex", "DeepSeek"]
+image = "/projects/lis-frontier.png"
+link = "https://lis.624work.club/"
+link_label = "Live site"
+repository = "https://github.com/ChenKai22567/LIS_Frontier"
+repository_label = "Source code"
+skill_label = "Weekly report Skill"
+skill_copied_label = "Prompt copied"
+skill_error_label = "Copy failed"
+skill_prompt = "Install the LIS Frontier Weekly Skill from https://github.com/ChenKai22567/LIS-Frontier-Skill. After installation, use the Skill to access the read-only API at https://lis.624work.club/. First ask which research directions I want to prioritize, then generate a report for the latest seven days covering topic trends, changes from the previous comparable period, core and adjacent literature, and social-network or complex-network analysis studies. Support follow-up searches and opening individual papers, and cite the underlying papers for every conclusion. If authentication is required, only guide me to configure LIS_FRONTIER_USERNAME and LIS_FRONTIER_PASSWORD as environment variables; never ask me to paste credentials into chat, command-line arguments, or a repository."
+
+[[items]]
 title = "Talent Policy Service Guide"
 subtitle = "A portable, actionable talent-policy guide for desktop use"
 date = "2026"
