@@ -14,7 +14,7 @@ export interface TextPageConfig extends BasePageConfig {
     source: string;
 }
 
-interface CardItem {
+export interface CardItem {
     title: string;
     subtitle?: string;
     date?: string;
@@ -31,7 +31,14 @@ interface CardItem {
     image?: string;
 }
 
+export interface CardGroup {
+    title: string;
+    description?: string;
+    items: CardItem[];
+}
+
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
-    items: CardItem[];
+    items?: CardItem[];
+    groups?: CardGroup[];
 }

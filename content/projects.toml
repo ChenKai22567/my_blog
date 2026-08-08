@@ -1,9 +1,13 @@
 type = "card"
+title = "Projects"
+description = ""
+
+# Add project groups with [[groups]], then add cards with [[groups.items]].
+[[groups]]
 title = "Information Systems"
 description = ""
 
-# Copy an [[items]] block for each project. Put screenshots in public/projects/.
-[[items]]
+[[groups.items]]
 title = "LIS Frontier Literature Tracker"
 subtitle = "An automatically updated LIS literature library with an intelligent weekly report"
 date = "2026"
@@ -19,26 +23,42 @@ skill_copied_label = "Prompt copied"
 skill_error_label = "Copy failed"
 skill_prompt = "Install the LIS Frontier Weekly Skill from https://github.com/ChenKai22567/LIS-Frontier-Skill. After installation, use the Skill to access the read-only API at https://lis.624work.club/. First ask which research directions I want to prioritize, then generate a report for the latest seven days covering topic trends, changes from the previous comparable period, core and adjacent literature, and social-network or complex-network analysis studies. Support follow-up searches and opening individual papers, and cite the underlying papers for every conclusion. If authentication is required, only guide me to configure LIS_FRONTIER_USERNAME and LIS_FRONTIER_PASSWORD as environment variables; never ask me to paste credentials into chat, command-line arguments, or a repository."
 
-[[items]]
+[[groups.items]]
 title = "Talent Policy Service Guide"
 subtitle = "A portable, actionable talent-policy guide for desktop use"
 date = "2026"
 content = "An information system featuring a RAG-powered large language model assistant, with high portability and actionable workflows."
 tags = ["Dify SSE", "DeepSeek API", "ECharts / GeoJSON", "Node.js Proxy"]
 image = "/projects/talent-policy-guide.png"
-link = "http://8.137.147.178/"
+link = "https://demo.624work.club/"
 link_label = "Live site"
 repository = "https://github.com/ChenKai22567/624_policy_guide"
 repository_label = "Source code"
 
-[[items]]
+[[groups.items]]
 title = "Human Resources Management Information System Dashboard"
 subtitle = "A visual specification for information-system development"
 date = "2026"
 content = "Clarifies the system data structure and turns textual requirements into an actionable interactive dashboard."
 tags = ["HTML5", "Vanilla JavaScript", "CSS3"]
 image = "/projects/talent-dashboard.webp"
-link = "http://8.137.147.178:22568/"
+link = "https://hr.624work.club/"
 link_label = "Live site"
 repository = "https://github.com/ChenKai22567/talent_dashboard"
 repository_label = "Source code"
+
+[[groups]]
+title = "Efficiency Tools"
+description = ""
+
+[[groups.items]]
+title = "DevSpace Remote Workspace"
+subtitle = "Operate server files and Shell safely from ChatGPT"
+date = "2026"
+content = "Deploys the official DevSpace 1.0.6 as an OAuth-protected remote MCP for workspace editing, chat attachment upload, isolated Shell tasks, and SHA-256-verified temporary downloads."
+tags = ["Next.js Static Export", "OAuth 2.1 / PKCE", "MCP File Transfer", "systemd / Nginx Isolation"]
+image = "/projects/devspace-mcp-guide.png"
+link = "https://devspace.624work.club/"
+link_label = "Usage guide"
+repository = "https://github.com/Waishnav/devspace"
+repository_label = "View source"

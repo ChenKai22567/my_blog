@@ -21,8 +21,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
+  const shareImage = '/wechat-share-logo.png';
 
   return {
+    metadataBase: new URL(config.site.url),
     title: {
       default: config.site.title,
       template: `%s | ${config.site.title}`,
@@ -38,9 +40,24 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: 'website',
       locale: openGraphLocale,
+      url: config.site.url,
       title: config.site.title,
       description: config.site.description,
       siteName: `${config.author.name}'s Academic Website`,
+      images: [
+        {
+          url: shareImage,
+          width: 1778,
+          height: 1264,
+          alt: 'AECC logo',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: config.site.title,
+      description: config.site.description,
+      images: [shareImage],
     },
   };
 }

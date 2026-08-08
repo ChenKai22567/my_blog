@@ -53,7 +53,7 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
             ? {
                 ...cardData,
                 title: section.title || cardData.title,
-                items: cardData.items.slice(0, section.limit || cardData.items.length),
+                items: (cardData.items || []).slice(0, section.limit || cardData.items?.length || 0),
               }
             : undefined,
         };

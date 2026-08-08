@@ -1,9 +1,13 @@
 type = "card"
+title = "项目"
+description = ""
+
+# 使用 [[groups]] 新建项目分组，再用 [[groups.items]] 添加项目卡片。
+[[groups]]
 title = "信息系统"
 description = ""
 
-# 每个项目复制一个 [[items]] 区块；项目截图放在 public/projects/ 中。
-[[items]]
+[[groups.items]]
 title = "LIS 前沿文献追踪与智能周报"
 subtitle = "自动更新的图书情报学前沿文献库与智能周报"
 date = "2026"
@@ -19,26 +23,42 @@ skill_copied_label = "提示词已复制"
 skill_error_label = "复制失败"
 skill_prompt = "请从 GitHub 仓库 https://github.com/ChenKai22567/LIS-Frontier-Skill 安装 LIS Frontier Weekly Skill。安装后使用该 Skill 访问 https://lis.624work.club/ 的只读 API，先询问我本周重点关注的研究方向，再生成最近 7 天 LIS 前沿周报，包括主题趋势、相较前一周期的变化、核心与邻近文献、社会网络分析和复杂网络分析研究；每项结论均需列出可追溯文章，并支持继续检索和查看具体文章。若站点需要认证，只引导我通过环境变量 LIS_FRONTIER_USERNAME 与 LIS_FRONTIER_PASSWORD 配置，绝不要求我在聊天、命令行参数或仓库中粘贴凭据。"
 
-[[items]]
+[[groups.items]]
 title = "人才政策服务指南"
 subtitle = "面向 PC 端的人才政策信息管理与实操指南"
 date = "2026"
 content = "包含 RAG 大模型助手，且具有高可迁移、可操作性的信息系统。"
 tags = ["Dify SSE", "DeepSeek API", "ECharts / GeoJSON", "Node.js 代理"]
 image = "/projects/talent-policy-guide.png"
-link = "http://8.137.147.178/"
+link = "https://demo.624work.club/"
 link_label = "访问网站"
 repository = "https://github.com/ChenKai22567/624_policy_guide"
 repository_label = "查看源码"
 
-[[items]]
+[[groups.items]]
 title = "人力资源管理信息系统数据看板"
 subtitle = "可视化的系统开发需求"
 date = "2026"
 content = "梳理系统数据结构，将文字需求转化为可操作的页面。"
 tags = ["HTML5", "原生 JavaScript", "CSS3"]
 image = "/projects/talent-dashboard.webp"
-link = "http://8.137.147.178:22568/"
+link = "https://hr.624work.club/"
 link_label = "访问网站"
 repository = "https://github.com/ChenKai22567/talent_dashboard"
+repository_label = "查看源码"
+
+[[groups]]
+title = "效率工具"
+description = ""
+
+[[groups.items]]
+title = "DevSpace远程工作区"
+subtitle = "在 ChatGPT 中安全操作服务器文件与 Shell"
+date = "2026"
+content = "将官方 DevSpace 1.0.6 部署为 OAuth 保护的远程 MCP，支持工作区编辑、聊天附件上传、隔离 Shell 任务与带 SHA-256 校验的短期下载链接。"
+tags = ["Next.js 静态导出", "OAuth 2.1 / PKCE", "MCP 文件传输", "systemd / Nginx 隔离"]
+image = "/projects/devspace-mcp-guide.png"
+link = "https://devspace.624work.club/"
+link_label = "使用指南"
+repository = "https://github.com/Waishnav/devspace"
 repository_label = "查看源码"

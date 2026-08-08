@@ -34,6 +34,9 @@ const markdownComponents = {
 
 export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
     const [copyStates, setCopyStates] = useState<Record<string, 'copied' | 'error'>>({});
+    const groups = config.groups?.length
+        ? config.groups
+        : [{ title: '', items: config.items || [] }];
 
     const copySkillPrompt = async (key: string, prompt: string) => {
         try {
@@ -68,10 +71,23 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                 )}
             </div>
 
-            <div className={`grid ${embedded ? "gap-4" : "gap-6"}`}>
-                {config.items.map((item, index) => (
+            <div className={embedded ? "space-y-8" : "space-y-12"}>
+                {groups.map((group, groupIndex) => (
+                    <section key={`${group.title}-${groupIndex}`}>
+                        {group.title && (
+                            <div className={embedded ? "mb-4" : "mb-6"}>
+                                <h2 className={`${embedded ? "text-xl" : "text-2xl"} font-serif font-bold text-primary`}>{group.title}</h2>
+                                {group.description && (
+                                    <div className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-500">
+                                        <ReactMarkdown components={markdownComponents}>{group.description}</ReactMarkdown>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        <div className={`grid ${embedded ? "gap-4" : "gap-6"}`}>
+                {group.items.map((item, index) => (
                     <motion.div
-                        key={`${item.title}-${index}`}
+                        key={`${group.title}-${item.title}-${index}`}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 0.1 * index }}
@@ -87,7 +103,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                             fill
                                             sizes="(min-width: 768px) 192px, 100vw"
                                             className="object-contain"
-                                            priority={embedded && index === 0}
+                                            priority={embedded && groupIndex === 0 && index === 0}
                                         />
                                     </div>
                                 </div>
@@ -171,6 +187,9 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                             </div>
                         </div>
                     </motion.div>
+                ))}
+                        </div>
+                    </section>
                 ))}
             </div>
         </motion.div>
