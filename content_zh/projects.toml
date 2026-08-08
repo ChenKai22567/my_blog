@@ -21,7 +21,7 @@ repository_label = "查看源码"
 skill_label = "智能周报 Skill"
 skill_copied_label = "提示词已复制"
 skill_error_label = "复制失败"
-skill_prompt = "请从 GitHub 仓库 https://github.com/ChenKai22567/LIS-Frontier-Skill 安装 LIS Frontier Weekly Skill。安装后使用该 Skill 访问 https://lis.624work.club/ 的只读 API，先询问我本周重点关注的研究方向，再生成最近 7 天 LIS 前沿周报，包括主题趋势、相较前一周期的变化、核心与邻近文献、社会网络分析和复杂网络分析研究；每项结论均需列出可追溯文章，并支持继续检索和查看具体文章。若站点需要认证，只引导我通过环境变量 LIS_FRONTIER_USERNAME 与 LIS_FRONTIER_PASSWORD 配置，绝不要求我在聊天、命令行参数或仓库中粘贴凭据。"
+skill_prompt = "请读取 https://lis.624work.club/api/weekly，并严格依据其中的任务说明与数据生成最新 LIS 前沿周报；如已安装 LIS Frontier Weekly Skill，可用它读取同一证据。"
 
 [[groups.items]]
 title = "人才政策服务指南"

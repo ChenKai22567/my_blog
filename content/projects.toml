@@ -21,7 +21,7 @@ repository_label = "Source code"
 skill_label = "Weekly report Skill"
 skill_copied_label = "Prompt copied"
 skill_error_label = "Copy failed"
-skill_prompt = "Install the LIS Frontier Weekly Skill from https://github.com/ChenKai22567/LIS-Frontier-Skill. After installation, use the Skill to access the read-only API at https://lis.624work.club/. First ask which research directions I want to prioritize, then generate a report for the latest seven days covering topic trends, changes from the previous comparable period, core and adjacent literature, and social-network or complex-network analysis studies. Support follow-up searches and opening individual papers, and cite the underlying papers for every conclusion. If authentication is required, only guide me to configure LIS_FRONTIER_USERNAME and LIS_FRONTIER_PASSWORD as environment variables; never ask me to paste credentials into chat, command-line arguments, or a repository."
+skill_prompt = "Read https://lis.624work.club/api/weekly and generate the latest LIS Frontier weekly briefing strictly from its task instructions and data; if the LIS Frontier Weekly Skill is installed, it may be used to retrieve the same evidence."
 
 [[groups.items]]
 title = "Talent Policy Service Guide"
