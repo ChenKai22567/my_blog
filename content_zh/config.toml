@@ -42,3 +42,9 @@ title = "简历"
 type = "page"
 target = "cv"
 href = "/cv"
+
+[[navigation]]
+title = "旧版博客"
+type = "link"
+target = "legacy-blog"
+href = "https://blog.624work.club/en/index.html"

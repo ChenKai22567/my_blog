@@ -47,9 +47,9 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: shareImage,
-          width: 1778,
-          height: 1264,
-          alt: 'AECC logo',
+          width: 572,
+          height: 568,
+          alt: 'Kaiyi Chen logo',
         },
       ],
     },

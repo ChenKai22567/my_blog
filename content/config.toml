@@ -72,3 +72,9 @@ title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
+
+[[navigation]]
+title = "Legacy Blog"
+type = "link"
+target = "legacy-blog"
+href = "https://blog.624work.club/en/index.html"
